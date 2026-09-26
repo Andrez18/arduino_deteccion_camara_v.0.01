@@ -3,10 +3,9 @@ import time
 import cv2
 import serial
 
-# ---------------- CONFIGURACIÓN ----------------
-USAR_CAMARA = False           # cámara desactivada por ahora; queda lista para reactivarla después
+USAR_CAMARA = False           # cámara desactivada por ahora
 
-PUERTO_ARDUINO = "COM7"       # el único Arduino UNO Q: LEDs + sensor ultrasónico
+PUERTO_ARDUINO = "COM7"       
 BAUDIOS = 9600
 
 CAMARA = 0
@@ -17,7 +16,6 @@ SEGUNDOS_ENTRE_MENSAJES = 2   # cada cuánto imprime que sigue corriendo
 
 ORDEN_ABIERTO = b"a"
 ORDEN_CERRADO = b"c"
-# ------------------------------------------------
 
 
 def hay_deteccion(frame, sustractor):
